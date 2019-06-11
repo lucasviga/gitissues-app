@@ -7,13 +7,30 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.lighter,
   },
+  form: {
+    borderBottomWidth: 1,
+    borderBottomColor: colors.light,
+    padding: metrics.basePadding,
+  },
+  inputContainer: {
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
   input: {
     backgroundColor: colors.white,
     borderRadius: metrics.baseRadius * 3,
-    padding: metrics.basePadding,
-    margin: metrics.baseMargin * 2,
+    padding: metrics.basePadding / 2,
+    margin: metrics.baseMargin,
+    flex: 1,
     borderWidth: 1,
     borderColor: colors.light,
+    fontSize: 14,
+  },
+  icon: {
+    color: colors.darker,
+  },
+  error: {
+    textAlign: 'center',
   },
 });
 
